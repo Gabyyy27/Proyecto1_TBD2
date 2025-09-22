@@ -36,15 +36,17 @@ Ejecución de sentencias SQL
  R/ Si
 - Ejecución de scripts DDL/DML
  R/ Si
+
 Sincronizacion a postgres
 ---------------------------------------------
 - Sincrnizacion de vistas?
-  R/ Si
+ R/ Si
 - Sincronizacion de tablas?
-  R/ Si
-  Creacion de ER Diagram
-  -----------------------
-  Visualizacion de todas las tablas?
-  R/ Si
-  Visualizacion de las relaciones?
-  R/ Si
+ R/ Si
+
+Creacion de ER Diagram
+-----------------------
+- Visualizacion de todas las tablas?
+ R/ Si
+- Visualizacion de las relaciones?
+ R/ Si
