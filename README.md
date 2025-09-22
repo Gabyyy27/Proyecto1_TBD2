@@ -18,7 +18,8 @@ Administración de objetos de base de datos
  R/ Si
 
 - Soportar justificación si un objeto no aplica al SGBD
- R/ En SQL Anywhere no se utiliza tablaspace si no Dbspace
+ R/ En SQL Anywhere no se utiliza tablaspace si no Dbspace, las funciones
+se visualizan en la misma carpeta de Procedimientos, ya que en SQL Anywhere asi se maneja
 
 Operaciones sobre objetos 
 ----------------------------
@@ -39,7 +40,7 @@ Ejecución de sentencias SQL
 
 Sincronizacion a postgres
 ---------------------------------------------
-- Sincrnizacion de vistas?
+- Sincronizacion de vistas?
  R/ Si
 - Sincronizacion de tablas?
  R/ Si
