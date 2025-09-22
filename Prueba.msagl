@@ -1,0 +1,1756 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MsaglGraph>
+  <GraphAttribute>
+    <BaseAttr>
+      <Styles />
+      <Color>
+        <Color>
+          <A>255</A>
+          <R>0</R>
+          <G>0</G>
+          <B>0</B>
+        </Color>
+      </Color>
+      <LineWidth>1</LineWidth>
+      <ID />
+    </BaseAttr>
+    <MinNodeHeight>9</MinNodeHeight>
+    <MinNodeWidth>13.5</MinNodeWidth>
+    <AspectRatio>0</AspectRatio>
+    <Border>0</Border>
+    <BackgroundColor>
+      <Color>
+        <A>255</A>
+        <R>255</R>
+        <G>255</G>
+        <B>255</B>
+      </Color>
+    </BackgroundColor>
+    <Margin>10</Margin>
+    <OptimizeLabelPositions>True</OptimizeLabelPositions>
+    <NodeSeparation>9</NodeSeparation>
+    <LayerDirection>LR</LayerDirection>
+    <LayerSeparation>36</LayerSeparation>
+  </GraphAttribute>
+  <Label>
+    <Text>ER Diagram</Text>
+    <FontName>Times-Roman</FontName>
+    <FontColor>
+      <Color>
+        <A>255</A>
+        <R>0</R>
+        <G>0</G>
+        <B>0</B>
+      </Color>
+    </FontColor>
+    <FontStyle>0</FontStyle>
+    <FontSize>12</FontSize>
+    <Width>0</Width>
+    <Height>0</Height>
+  </Label>
+  <Subgraphs />
+  <Nodes>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: AuditoriaInventario
+
+ Columnas:
+id_auditoria (integer [4]
+operacion (varchar [20]
+id_producto (integer [4]
+producto_nombre (varchar [100]
+cantidad (decimal [12]
+costo (decimal [12]
+precio (decimal [12]
+inventario_antes (integer [4]
+inventario_despues (integer [4]
+fecha (timestamp [8]
+usuario (varchar [50]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>AuditoriaInventario</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>AuditoriaInventario
+ id_auditoria - (integer)
+operacion - (varchar)
+id_producto - (integer)
+producto_nombre - (varchar)
+cantidad - (decimal)
+costo - (decimal)
+precio - (decimal)
+inventario_antes - (integer)
+inventario_despues - (integer)
+fecha - (timestamp)
+usuario - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>212.3828125</Width>
+        <Height>217.3125</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Categorias
+
+ Columnas:
+Categoria_Id (integer [4]
+Nombre (varchar [100]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Categorias</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Categorias
+ Categoria_Id - (integer)
+Nombre - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>169.390625</Width>
+        <Height>54.328125</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Clientes
+
+ Columnas:
+id_cliente (integer [4]
+nombre (varchar [100]
+telefono (varchar [15]
+rtn (varchar [20]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Clientes</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Clientes
+ id_cliente - (integer)
+nombre - (varchar)
+telefono - (varchar)
+rtn - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>145.5625</Width>
+        <Height>90.546875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: ContactosProveedores
+
+ Columnas:
+id_contacto (integer [4]
+id_proveedor (integer [4]
+nombre (varchar [100]
+genero (char [1]
+telefono_principal (varchar [20]
+telefono_secundario (varchar [20]
+tipo_contacto (varchar [20]
+principal (bit [1]
+estado (bit [1]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>ContactosProveedores</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>ContactosProveedores
+ id_contacto - (integer)
+id_proveedor - (integer)
+nombre - (varchar)
+genero - (char)
+telefono_principal - (varchar)
+telefono_secundario - (varchar)
+tipo_contacto - (varchar)
+principal - (bit)
+estado - (bit)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>222.0625</Width>
+        <Height>181.09375</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: DetalleFactura
+
+ Columnas:
+id_detalle (integer [4]
+cantidad (integer [4]
+factura_id (integer [4]
+precio_unitario (decimal [12]
+subtotal (decimal [12]
+iproducto_id (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>DetalleFactura</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>DetalleFactura
+ id_detalle - (integer)
+cantidad - (integer)
+factura_id - (integer)
+precio_unitario - (decimal)
+subtotal - (decimal)
+iproducto_id - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>184.96875</Width>
+        <Height>126.765625</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: DetalleVenta
+
+ Columnas:
+detalle_id (integer [4]
+venta_id (integer [4]
+producto_id (integer [4]
+cantidad (integer [4]
+precio_unitario (decimal [12]
+subtotal (decimal [12]
+factura_id (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>DetalleVenta</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>DetalleVenta
+ detalle_id - (integer)
+venta_id - (integer)
+producto_id - (integer)
+cantidad - (integer)
+precio_unitario - (decimal)
+subtotal - (decimal)
+factura_id - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>184.96875</Width>
+        <Height>144.875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Facturas
+
+ Columnas:
+factura_id (integer [4]
+venta_id (integer [4]
+fecha (timestamp [8]
+subtotal (decimal [12]
+impuesto (decimal [12]
+total (decimal [12]
+id_cliente (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Facturas</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Facturas
+ factura_id - (integer)
+venta_id - (integer)
+fecha - (timestamp)
+subtotal - (decimal)
+impuesto - (decimal)
+total - (decimal)
+id_cliente - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>148.0390625</Width>
+        <Height>144.875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: imagenes
+
+ Columnas:
+id (integer [4]
+nombre (varchar [50]
+imagen (long binary [32767]
+fecha_creacion (timestamp [8]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>imagenes</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>imagenes
+ id - (integer)
+nombre - (varchar)
+imagen - (long binary)
+fecha_creacion - (timestamp)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>206.9140625</Width>
+        <Height>90.546875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Producto_Imagen
+
+ Columnas:
+id_producto (integer [4]
+id_imagen (integer [4]
+fecha_asociacion (timestamp [8]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Producto_Imagen</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Producto_Imagen
+ id_producto - (integer)
+id_imagen - (integer)
+fecha_asociacion - (timestamp)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>222.1328125</Width>
+        <Height>72.4375</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Productos
+
+ Columnas:
+id_producto (integer [4]
+nombre (varchar [100]
+costo (decimal [12]
+precio (decimal [12]
+ganancia_neta (decimal [12]
+marca (varchar [50]
+cantidad (integer [4]
+stock_minimo (integer [4]
+estado (varchar [20]
+fecha_creacion (timestamp [8]
+fecha_actualizacion (timestamp [8]
+categoria_id (integer [4]
+auditoriainventario (integer [4]
+id_detalle (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Productos</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Productos
+ id_producto - (integer)
+nombre - (varchar)
+costo - (decimal)
+precio - (decimal)
+ganancia_neta - (decimal)
+marca - (varchar)
+cantidad - (integer)
+stock_minimo - (integer)
+estado - (varchar)
+fecha_creacion - (timestamp)
+fecha_actualizacion - (timestamp)
+categoria_id - (integer)
+auditoriainventario - (integer)
+id_detalle - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>239.125</Width>
+        <Height>271.640625</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Proveedores
+
+ Columnas:
+id_proveedor (integer [4]
+nombre (varchar [100]
+direccion_principal (varchar [200]
+direccion_secundaria (varchar [200]
+fecha_registro (timestamp [8]
+estado (bit [1]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Proveedores</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Proveedores
+ id_proveedor - (integer)
+nombre - (varchar)
+direccion_principal - (varchar)
+direccion_secundaria - (varchar)
+fecha_registro - (timestamp)
+estado - (bit)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>229.25</Width>
+        <Height>126.765625</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Prueba
+
+ Columnas:
+id (decimal [1]
+nombre (varchar [1]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Prueba</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Prueba
+ id - (decimal)
+nombre - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>132.0859375</Width>
+        <Height>54.328125</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Prueba12
+
+ Columnas:
+ID (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Prueba12</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Prueba12
+ ID - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>93.75</Width>
+        <Height>36.21875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Prueba2
+
+ Columnas:
+f (bit [1]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Prueba2</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Prueba2
+ f - (bit)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>60.4921875</Width>
+        <Height>36.21875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Prueba3
+
+ Columnas:
+ID (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Prueba3</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Prueba3
+ ID - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>93.75</Width>
+        <Height>36.21875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Prueba5
+
+ Columnas:
+id (integer [4]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Prueba5</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Prueba5
+ id - (integer)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>90.296875</Width>
+        <Height>36.21875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Socio
+
+ Columnas:
+nombre (varchar [60]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>4</LineWidth>
+          <ID>Socio</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Socio
+ nombre - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>136.3359375</Width>
+        <Height>36.21875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: usuarios
+
+ Columnas:
+id_usuarios (integer [4]
+nombre_usuario (varchar [50]
+contraseña (varchar [50]
+rol (varchar [50]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>usuarios</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>usuarios
+ id_usuarios - (integer)
+nombre_usuario - (varchar)
+contraseña - (varchar)
+rol - (varchar)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>193.484375</Width>
+        <Height>90.546875</Height>
+      </Label>
+    </Node>
+    <Node>
+      <UserData>
+        <UserDataType>System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</UserDataType>
+        <SerializedUserData>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;string xmlns="http://schemas.microsoft.com/2003/10/Serialization/"&gt;Tabla: Ventas
+
+ Columnas:
+venta_id (integer [4]
+fecha_venta (timestamp [8]
+subtotal (decimal [12]
+impuesto (decimal [12]
+total (decimal [12]
+&lt;/string&gt;</SerializedUserData>
+      </UserData>
+      <NodeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>169</R>
+              <G>169</G>
+              <B>169</B>
+            </Color>
+          </Color>
+          <LineWidth>1</LineWidth>
+          <ID>Ventas</ID>
+        </BaseAttr>
+        <Fillcolor>
+          <Color>
+            <A>255</A>
+            <R>211</R>
+            <G>211</G>
+            <B>211</B>
+          </Color>
+        </Fillcolor>
+        <LabelMargin>1</LabelMargin>
+        <Padding>2</Padding>
+        <Shape>Box</Shape>
+        <XRad>3</XRad>
+        <YRad>3</YRad>
+      </NodeAttribute>
+      <Label>
+        <Text>Ventas
+ venta_id - (integer)
+fecha_venta - (timestamp)
+subtotal - (decimal)
+impuesto - (decimal)
+total - (decimal)
+</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>12</FontSize>
+        <Width>185.484375</Width>
+        <Height>108.65625</Height>
+      </Label>
+    </Node>
+  </Nodes>
+  <Edges>
+    <Edge>
+      <SourceNodeID>ContactosProveedores</SourceNodeID>
+      <TargetNodeID>Proveedores</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>ContactosProveedores_Proveedores</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>174.86979675293</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>DetalleFactura</SourceNodeID>
+      <TargetNodeID>Facturas</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>DetalleFactura_Facturas</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>116.86979675293</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>DetalleFactura</SourceNodeID>
+      <TargetNodeID>Productos</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>DetalleFactura_Productos</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>123.40104675293</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>DetalleVenta</SourceNodeID>
+      <TargetNodeID>Facturas</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>DetalleVenta_Facturas</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>108.583335876465</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>DetalleVenta</SourceNodeID>
+      <TargetNodeID>Productos</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>DetalleVenta_Productos</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>115.114585876465</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>DetalleVenta</SourceNodeID>
+      <TargetNodeID>Ventas</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>DetalleVenta_Ventas</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>100.296875</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>Facturas</SourceNodeID>
+      <TargetNodeID>Clientes</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>Facturas_Clientes</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>86.0416717529297</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>Facturas</SourceNodeID>
+      <TargetNodeID>Ventas</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>Facturas_Ventas</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>80.5885467529297</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>Producto_Imagen</SourceNodeID>
+      <TargetNodeID>imagenes</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>Producto_Imagen_imagenes</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>136.35417175293</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+    <Edge>
+      <SourceNodeID>Productos</SourceNodeID>
+      <TargetNodeID>Categorias</TargetNodeID>
+      <EdgeAttribute>
+        <BaseAttr>
+          <Styles />
+          <Color>
+            <Color>
+              <A>255</A>
+              <R>255</R>
+              <G>0</G>
+              <B>0</B>
+            </Color>
+          </Color>
+          <LineWidth>2</LineWidth>
+          <ID />
+        </BaseAttr>
+        <EdgeSeparation>1</EdgeSeparation>
+        <Weight>1</Weight>
+        <ArrowStyle>None</ArrowStyle>
+        <ArrowStyle>Normal</ArrowStyle>
+        <ArrowheadLength>10</ArrowheadLength>
+      </EdgeAttribute>
+      <Label>
+        <Text>Productos_Categorias</Text>
+        <FontName>Times-Roman</FontName>
+        <FontColor>
+          <Color>
+            <A>255</A>
+            <R>0</R>
+            <G>0</G>
+            <B>0</B>
+          </Color>
+        </FontColor>
+        <FontStyle>0</FontStyle>
+        <FontSize>8</FontSize>
+        <Width>105.55729675293</Width>
+        <Height>12.0729169845581</Height>
+      </Label>
+    </Edge>
+  </Edges>
+  <GeometryGraphIsPresent>True</GeometryGraphIsPresent>
+  <graph margins="10">
+    <layoutAlgorithmSettings edgeRoutingMode="3" layoutAlgorithmType="MdsLayoutSettings" reporting="False" exponent="-2" iterationsWithMajorization="30" pivotNumber="50" rotationAngle="0" scaleX="200" scaleY="200" />
+    <nodes>
+      <node id="AuditoriaInventario" padding="2">
+        <rect x="1057.95660079595" y="-7.47180175781" width="214.3828125" height="219.3125" rx="3" ry="3" />
+      </node>
+      <node id="Categorias" padding="2">
+        <rect x="-.19657897949" y="494.76862651518" width="171.390625" height="56.328125" rx="3" ry="3" />
+      </node>
+      <node id="Clientes" padding="2">
+        <rect x="768.4009977686" y="45.3290555541" width="147.5625" height="92.546875" rx="3" ry="3" />
+      </node>
+      <node id="ContactosProveedores" padding="2">
+        <rect x="-94.77433776855" y="601.14017137" width="224.0625" height="183.09375" rx="3" ry="3" />
+      </node>
+      <node id="DetalleFactura" padding="2">
+        <rect x="378.89580787501" y="11.23590087891" width="186.96875" height="128.765625" rx="3" ry="3" />
+      </node>
+      <node id="DetalleVenta" padding="2">
+        <rect x="283.32054692557" y="336.44383088743" width="186.96875" height="146.875" rx="3" ry="3" />
+      </node>
+      <node id="Facturas" padding="2">
+        <rect x="593.20312415707" y="186.99340991491" width="150.0390625" height="146.875" rx="3" ry="3" />
+      </node>
+      <node id="imagenes" padding="2">
+        <rect x="762.70623779297" y="511.75900681922" width="208.9140625" height="92.546875" rx="3" ry="3" />
+      </node>
+      <node id="Producto_Imagen" padding="2">
+        <rect x="966.03070068359" y="312.95050462196" width="224.1328125" height="74.4375" rx="3" ry="3" />
+      </node>
+      <node id="Productos" padding="2">
+        <rect x="3.47928142134" y="79.96826874138" width="241.125" height="273.640625" rx="3" ry="3" />
+      </node>
+      <node id="Proveedores" padding="2">
+        <rect x="293.10693359375" y="499.42905076454" width="231.25" height="128.765625" rx="3" ry="3" />
+      </node>
+      <node id="Prueba" padding="2">
+        <rect x="1138.84375" y="600.10086472938" width="134.0859375" height="56.328125" rx="3" ry="3" />
+      </node>
+      <node id="Prueba12" padding="2">
+        <rect x="655.1015625" y="702.64773972938" width="95.75" height="38.21875" rx="3" ry="3" />
+      </node>
+      <node id="Prueba2" padding="2">
+        <rect x="480.3125" y="702.64773972938" width="62.4921875" height="38.21875" rx="3" ry="3" />
+      </node>
+      <node id="Prueba3" padding="2">
+        <rect x="760.8515625" y="702.64773972938" width="95.75" height="38.21875" rx="3" ry="3" />
+      </node>
+      <node id="Prueba5" padding="2">
+        <rect x="552.8046875" y="702.64773972938" width="92.296875" height="38.21875" rx="3" ry="3" />
+      </node>
+      <node id="Socio" padding="2">
+        <rect x="908.17419433594" y="714.08017381141" width="138.3359375" height="38.21875" rx="3" ry="3" />
+      </node>
+      <node id="usuarios" padding="2">
+        <rect x="549.94665527344" y="575.15732224891" width="195.484375" height="92.546875" rx="3" ry="3" />
+      </node>
+      <node id="Ventas" padding="2">
+        <rect x="539.21535292" y="451.38309129188" width="187.484375" height="110.65625" rx="3" ry="3" />
+      </node>
+    </nodes>
+    <clusters />
+    <edges>
+      <edge id="0" s="ContactosProveedores" t="Proveedores" lineWidth="2" at="293.10693359375 601.8760876299" label="288.11257463524 640.4462249669 174.86979675293 12.07291698456">
+        <lineSegment points="129.28816223145 655.80589924843 283.60839979497 605.00304392532" />
+      </edge>
+      <edge id="1" s="DetalleFactura" t="Facturas" lineWidth="2" at="593.222301673 189.65473998935" label="623.08504964346 153.90544771459 116.86979675293 12.07291698456">
+        <lineSegment points="540.60559994651 140.00152587891 585.94938747702 182.79145221322" />
+      </edge>
+      <edge id="2" s="DetalleFactura" t="Productos" lineWidth="2" at="244.60428142134 167.9286446879" label="378.83567753414 146.72877366966 123.40104675293 12.07291698456">
+        <lineSegment points="378.89580787501 113.5047943016 253.87212242573 164.1726996514" />
+      </edge>
+      <edge id="3" s="DetalleVenta" t="Facturas" lineWidth="2" at="593.20312415707 298.90386210121" label="472.09282939893 324.8869419839 108.58333587647 12.07291698456">
+        <lineSegment points="470.28929692557 361.93888403908 584.30501684373 303.46715983862" />
+      </edge>
+      <edge id="4" s="DetalleVenta" t="Productos" lineWidth="2" at="244.60428142134 308.88960745415" label="326.77271763287 319.13746975887 115.11458587647 12.07291698456">
+        <lineSegment points="283.45176725051 338.5662756607 252.55084294069 314.96020544934" />
+      </edge>
+      <edge id="5" s="DetalleVenta" t="Ventas" lineWidth="2" at="539.21535292 471.27513398072" label="537.82827899719 443.61928141158 100.296875 12.07291698456">
+        <lineSegment points="470.28929692557 445.21995585078 529.86137003701 467.73917523878" />
+      </edge>
+      <edge id="6" s="Facturas" t="Clientes" lineWidth="2" at="794.50242896592 137.8759305541" label="720.57336066345 159.04899884852 86.04167175293 12.07291698456">
+        <lineSegment points="742.64785089925 188.20098709819 787.32631864383 144.84037171225" />
+      </edge>
+      <edge id="7" s="Facturas" t="Ventas" lineWidth="2" at="640.880028088 451.38309129188" label="694.29675377222 387.95972510127 80.58854675293 12.07291698456">
+        <lineSegment points="657.70706883841 333.86840991491 642.29748001049 441.48405951865" />
+      </edge>
+      <edge id="8" s="Producto_Imagen" t="imagenes" lineWidth="2" at="914.12027849944 511.75900681922" label="1050.36666523846 453.52499179574 136.35417175293 12.07291698456">
+        <lineSegment points="1040.32854487878 387.38800462196 921.24300040639 504.73997322219" />
+      </edge>
+      <edge id="9" s="Productos" t="Categorias" lineWidth="2" at="89.04454342655 494.76862651518" label="155.33376805037 419.47774584381 105.55729675293 12.07291698456">
+        <lineSegment points="106.8163254201 353.60889374138 90.29366661631 484.84694867034" />
+      </edge>
+    </edges>
+  </graph>
+</MsaglGraph>
