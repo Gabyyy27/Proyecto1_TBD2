@@ -79,7 +79,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 624);
-            this.Controls.Add(this.gv_ERD);
+            this.Controls.Add(gv_ERD);
             this.Name = "ERDiagram";
             this.Text = "ERDiagram";
             this.ResumeLayout(false);

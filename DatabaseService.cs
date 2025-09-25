@@ -29,7 +29,6 @@ namespace Proyecto1_TBD2
             }
         }
 
-        // Ejecutar consultas INSERT/UPDATE/DELETE
         public static int ExecuteNonQuery(string connectionName, string sql, params OdbcParameter[] parameters)
         {
             if (!_activeConnections.ContainsKey(connectionName))
@@ -42,7 +41,6 @@ namespace Proyecto1_TBD2
             }
         }
 
-        // Ejecutar consultas SELECT
         public static DataTable ExecuteQuery(string connectionName, string sql)
         {
             if (!_activeConnections.ContainsKey(connectionName))
@@ -57,7 +55,6 @@ namespace Proyecto1_TBD2
             return dt;
         }
 
-        // Añadir conexión al diccionario para reutilizar
         public static void AddConnection(string name, string server, string database, string user, string password)
         {
             if (!_activeConnections.ContainsKey(name))

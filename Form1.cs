@@ -26,12 +26,11 @@ namespace Proyecto1_TBD2
             treeView1.Nodes.Clear();
             TreeNode rootNode = treeView1.Nodes.Add("Conexiones Guardadas");
 
-            // Cargar conexiones del archivo
             var savedConnections = ConnectionStorageService.LoadConnections();
             foreach (var conn in savedConnections)
             {
                 TreeNode connNode = rootNode.Nodes.Add(conn.Name);
-                connNode.Tag = conn; // Guarda objeto para usarlo después
+                connNode.Tag = conn;
             }
         }
         private void LoadDatabaseStructure()
@@ -39,11 +38,9 @@ namespace Proyecto1_TBD2
             try
             {
 
-                // 1. Nodo raíz con el nombre de conexión
                 TreeNode connectionNode = new TreeNode(_connectionName);
                 treeView1.Nodes.Add(connectionNode);
 
-                // 2. Nodos contenedores inicialmente vacíos
                 connectionNode.Nodes.Add("Tablas", "Tablas");
                 connectionNode.Nodes.Add("Vistas", "Vistas");
                 connectionNode.Nodes.Add("Procedimientos", "Procedimientos");
@@ -53,9 +50,6 @@ namespace Proyecto1_TBD2
                 connectionNode.Nodes.Add("Dbspaces", "Dbspaces");
                 connectionNode.Nodes.Add("Usuarios", "Usuarios");
 
-
-
-                // 3. Cargar solo las tablas inicialmente,las demás se cargan al expandir
                 LoadTables(connectionNode.Nodes["Tablas"]);
                 LoadView(connectionNode.Nodes["Vistas"]);
                 LoadProcedimientos(connectionNode.Nodes["Procedimientos"]);
@@ -386,15 +380,12 @@ namespace Proyecto1_TBD2
 
         private void btn_SincronizarPg_Click(object sender, EventArgs e)
         {
-            // Mostrar formulario de configuración de PostgreSQL
             using (var pgForm = new ReplicationForm())
             {
                 if (pgForm.ShowDialog() == DialogResult.OK)
                 {
-                    // Crear instancia de sincronización
                     var sincronizador = new PgSincronizacion(_connectionName);
                     MessageBox.Show($"Sincronizando {_connectionName} con PostgreSQL...");
-                    // Ejecutar sincronización
                     bool exito = sincronizador.Sincronizar(
                         pgForm.PgHost,
                         pgForm.PgDatabase,
