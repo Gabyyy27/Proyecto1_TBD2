@@ -27,20 +27,21 @@ namespace Proyecto1_TBD2
 
                 DataTable vistas = ObtenerVistas();
 
-                string connectionString = $"Host={pgHost};Database={pgDatabase};Username={pgUser};Password={pgPassword}";
+                string pgConnectionString = $"Host={pgHost};Database={pgDatabase};Username={pgUser};Password={pgPassword}";
 
-                using (var pgConnection = new NpgsqlConnection(pgConnectionString))
+                using (var pgConn = new NpgsqlConnection(pgConnectionString))
                 {
-                    pgConnection.Open();
+                    pgConn.Open();
                     foreach (DataRow tabla in tablas.Rows)
                     {
                         string nombreTabla = tabla["table_name"].ToString();
-                        SincronizarTabla(pgConnection, nombreTabla);
+                        SincronizarTabla(pgConn, nombreTabla);
 
                     }
                     foreach (DataRow vista in vistas.Rows)
                     {
                         string nombreVista = vista["viewname"].ToString();
+                        SincronizarVista(pgConn, nombreVista);
 
                     }
                 }
@@ -77,6 +78,7 @@ namespace Proyecto1_TBD2
 
             CrearTablaPostgreSQL(pgConn, tablaNombre, datos);
 
+            InsertarDatosPostgreSQL(pgConn, tablaNombre, datos);
         }
         private void CrearTablaPostgreSQL(NpgsqlConnection pgConn, string tablaNombre, DataTable esquema)
         {
@@ -84,6 +86,8 @@ namespace Proyecto1_TBD2
 
             foreach (DataColumn columna in esquema.Columns)
             {
+                string tipoPostgres = MapearTipoDato(columna.DataType);
+                columnas.Add($"{columna.ColumnName} {tipoPostgres}");
             }
 
             string sql = $"CREATE TABLE IF NOT EXISTS {tablaNombre} ({string.Join(", ", columnas)})";
@@ -94,5 +98,103 @@ namespace Proyecto1_TBD2
             }
         }
 
+        private void InsertarDatosPostgreSQL(NpgsqlConnection pgConn, string tablaNombre, DataTable datos)
+        {
+            string deleteSql = $"DELETE FROM {tablaNombre}";
+            using (var deleteCmd = new NpgsqlCommand(deleteSql, pgConn))
+            {
+                deleteCmd.ExecuteNonQuery();
+            }
+            foreach (DataRow fila in datos.Rows)
+            {
+                var nombresColumnas = string.Join(", ", datos.Columns.Cast<DataColumn>().Select(c => c.ColumnName));
+                var valoresParametros = string.Join(", ", datos.Columns.Cast<DataColumn>().Select(c => $"@{c.ColumnName}"));
+
+                string insertSql = $"INSERT INTO {tablaNombre} ({nombresColumnas}) VALUES ({valoresParametros})";
+
+                using (var cmd = new NpgsqlCommand(insertSql, pgConn))
+                {
+                    foreach (DataColumn columna in datos.Columns)
+                    {
+                        cmd.Parameters.AddWithValue($"@{columna.ColumnName}", fila[columna]);
+                    }
+
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        private void SincronizarVista(NpgsqlConnection pgConn, string vistaNombre)
+        {
+            try
+            {
+                DataTable definicion = DatabaseService.ExecuteQuery(_connectionName, $"Select viewtext from SYS.SYSVIEWS where viewname = '{vistaNombre}'");
+                if (definicion.Rows.Count > 0)
+                  {
+                    string vistaSQL = definicion.Rows[0]["viewtext"].ToString();
+
+                    vistaSQL = ExtraerSelectDeVista(vistaSQL);
+
+                    vistaSQL = TransformarSyntaxVistaCompleta(vistaSQL);
+
+                    string vistaEscapada = $"\"{vistaNombre}\"";
+
+                    string dropSql = $"DROP VIEW IF EXISTS {vistaEscapada} CASCADE";
+                    using (var dropCmd = new NpgsqlCommand(dropSql, pgConn))
+                    {
+                        dropCmd.ExecuteNonQuery();
+                    }
+
+                    string createSql = $"CREATE OR REPLACE VIEW {vistaEscapada} AS {vistaSQL}";
+
+
+                    using (var createCmd = new NpgsqlCommand(createSql, pgConn))
+                    {
+                        createCmd.ExecuteNonQuery();
+                        Console.WriteLine($"Vista {vistaNombre} creada exitosamente");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error en vista {vistaNombre}: {ex.Message}");
+            }
+        }
+        private string ExtraerSelectDeVista(string vistaSQL)
+        {
+            int selectIndex = vistaSQL.IndexOf("SELECT", StringComparison.OrdinalIgnoreCase);
+
+            if (selectIndex >= 0)
+            {
+                return vistaSQL.Substring(selectIndex);
+            }
+
+            return vistaSQL;
+        }
+
+        private string TransformarSyntaxVistaCompleta(string vistaSQL)
+        {
+            string sqlUpper = vistaSQL.ToUpper();
+            vistaSQL = vistaSQL.Replace("\"Gaby_28\".", "\"public\".");
+            vistaSQL = Regex.Replace(vistaSQL, @"\"".*?\""", m => m.Value.ToLower());
+            vistaSQL = Regex.Replace(vistaSQL, @"\bDATETIME\b", "TIMESTAMP", RegexOptions.IgnoreCase);
+            vistaSQL = Regex.Replace(vistaSQL, @"\bINT\s+IDENTITY\b", "SERIAL", RegexOptions.IgnoreCase);
+            vistaSQL = vistaSQL.Replace("'", "''");
+
+            return vistaSQL;
+        }
+        private string MapearTipoDato(Type tipo)
+        {
+            if (tipo == typeof(string)) return "TEXT";
+            if (tipo == typeof(int)) return "INTEGER";
+            if (tipo == typeof(long)) return "BIGINT";
+            if (tipo == typeof(decimal)) return "NUMERIC";
+            if (tipo == typeof(DateTime)) return "TIMESTAMP";
+            if (tipo == typeof(bool)) return "BOOLEAN";
+
+            return "TEXT";
+        }
+
     }
 }
+
+  
